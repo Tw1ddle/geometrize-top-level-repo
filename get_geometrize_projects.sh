@@ -15,7 +15,7 @@ repoListLength=${#repoList[@]}
 for (( i=0; i<${repoListLength}; i++ ));
 do
   repoName=${repoList[$i]}
-  checkoutCommand="git clone --recurse-submodules -j8 ${urlBase}${repoName}.git ${localCheckoutFolder}/${repoName}"
+  checkoutCommand="git clone --recurse-submodules -j8 ${urlBase}${repoName} ${localCheckoutFolder}/${repoName}"
   echo "Will run checkout command: ${checkoutCommand}"
   ${checkoutCommand}
 done

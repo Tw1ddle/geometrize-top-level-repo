@@ -8,9 +8,9 @@ Top level repository for the [Geometrize](https://www.geometrize.co.uk/) project
 
 ## Getting Started
 
-Fetch the entire Geometrize codebase by executing the [get_geometrize_projects.sh](https://github.com/Tw1ddle/geometrize-top-level-repo/blob/master/get_geometrize_projects.sh) script.
+Checkout this repository and then download the entire Geometrize codebase by executing the [get_geometrize_projects.sh](https://github.com/Tw1ddle/geometrize-top-level-repo/blob/master/get_geometrize_projects.sh) script.
 
-The Geometrize project is split across numerous git repositories and submodules, since it comprises several separate software projects, and for the sake of modularity.
+The Geometrize project is split across numerous git repositories and submodules, since it comprises several separate, modular pieces of software.
 
 To contribute, please make a pull request or open an issue on the relevant repository. Write access to repositories can also be granted to trusted contributors.
 

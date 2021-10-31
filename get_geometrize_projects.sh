@@ -2,7 +2,9 @@
 
 localCheckoutFolder="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )" ## The base folder to check the Geometrize projects out to (defaults to the current directory the script is in)
 
-urlBase="git@github.com:Tw1ddle/" ## Base URL for checking out all projects (from my account on GitHub)
+## Base URL for checking out all projects
+## You may wish to change this to your own account, or use HTTPS instead of SSH etc...
+urlBase="git@github.com:Tw1ddle/"
 
 ## List of all the Geometrize project repository names
 declare -a repoList=("geometrize" "geometrize-docs" "geometrize-functional-tests" "geometrize-gallery" "geometrize-haxe"

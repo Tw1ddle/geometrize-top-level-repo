@@ -16,69 +16,31 @@ To contribute, please make a pull request or open an issue on the relevant repos
 
 ## Project Structure
 
-The project repositories are structured as follows:
+The project repositories are structured as follows (table generated via the [list_git_repos_and_submodules.sh](https://github.com/Tw1ddle/geometrize-top-level-repo/blob/master/list_git_repos_and_submodules.sh) script):
 
-geometrize-top-level-repo
--------------------------------------------------
-geometrize
-    lib/burstlinker/burstlinker
-    lib/cereal
-    lib/chaiscript
-    lib/dataslinger
-    lib/geometrize
-    resources/scripts
-    resources/templates
-    resources/web_export
-    translations
--------------------------------------------------
-geometrize-docs
-    geometrize
--------------------------------------------------
-geometrize-functional-tests
--------------------------------------------------
-geometrize-gallery
--------------------------------------------------
-geometrize-haxe
--------------------------------------------------
-geometrize-haxe-example
-    lib/geometrize
--------------------------------------------------
-geometrize-haxe-unit-tests
-    geometrize
--------------------------------------------------
-geometrize-haxe-web
-    lib/geometrize
--------------------------------------------------
-geometrize-lib-docs
-    geometrize
--------------------------------------------------
-geometrize-lib-example
-    lib/args
-    lib/geometrize
--------------------------------------------------
-geometrize-lib-fuzzing
-    lib/geometrize
--------------------------------------------------
-geometrize-lib-unit-tests
-    geometrize
--------------------------------------------------
-geometrize-resources
--------------------------------------------------
-geometrize-s3-bucket-downloader
--------------------------------------------------
-geometrize-screenshots
--------------------------------------------------
-geometrize-tween-optimizer
--------------------------------------------------
-geometrize-tweens
--------------------------------------------------
-geometrize-twitter-bot
--------------------------------------------------
-geometrize-twitter-bot-docs
-    geometrize-twitter-bot
--------------------------------------------------
-geometrize-website
-
+| Repository Name | Submodule Names |
+| --------------- | --------------- |
+| geometrize-top-level-repo |  |
+| geometrize | lib/burstlinker/burstlinker lib/cereal lib/chaiscript lib/dataslinger lib/geometrize resources/scripts resources/templates resources/web_export translations |
+| geometrize-docs | geometrize |
+| geometrize-functional-tests |  |
+| geometrize-gallery |  |
+| geometrize-haxe |  |
+| geometrize-haxe-example | lib/geometrize |
+| geometrize-haxe-unit-tests | geometrize |
+| geometrize-haxe-web | lib/geometrize |
+| geometrize-lib-docs | geometrize |
+| geometrize-lib-example | lib/args lib/geometrize |
+| geometrize-lib-fuzzing | lib/geometrize |
+| geometrize-lib-unit-tests | geometrize |
+| geometrize-resources |  |
+| geometrize-s3-bucket-downloader |  |
+| geometrize-screenshots |  |
+| geometrize-tween-optimizer |  |
+| geometrize-tweens |  |
+| geometrize-twitter-bot |  |
+| geometrize-twitter-bot-docs | geometrize-twitter-bot |
+| geometrize-website |  |
 
 ## Notes
  * Got an idea or suggestion? Open an issue on GitHub, or send Sam a message on [Twitter](https://twitter.com/Sam_Twidale).

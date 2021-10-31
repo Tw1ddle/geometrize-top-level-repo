@@ -16,10 +16,10 @@ To contribute, please make a pull request or open an issue on the relevant repos
 
 ## Project Structure
 
-The project repositories are structured as follows (table generated via the [list_git_repos_and_submodules.sh](https://github.com/Tw1ddle/geometrize-top-level-repo/blob/master/list_git_repos_and_submodules.sh) script):
+The project repositories are structured as follows:
 
-| Repository Name | Submodule Names |
-| --------------- | --------------- |
+| Repository Name                   | Submodules      |
+| --------------------------------- | --------------- |
 | [geometrize-top-level-repo](https://github.com/Tw1ddle/geometrize-top-level-repo) |  |
 | [geometrize](https://github.com/Tw1ddle/geometrize) | lib/burstlinker/burstlinker lib/cereal lib/chaiscript lib/dataslinger lib/geometrize resources/scripts resources/templates resources/web_export translations |
 | [geometrize-docs](https://github.com/Tw1ddle/geometrize-docs) | geometrize |
@@ -42,6 +42,8 @@ The project repositories are structured as follows (table generated via the [lis
 | [geometrize-twitter-bot-docs](https://github.com/Tw1ddle/geometrize-twitter-bot-docs) | geometrize-twitter-bot |
 | [geometrize-website](https://github.com/Tw1ddle/geometrize-website) |  |
 
+
+The table above is generated via the [list_git_repos_and_submodules.sh](https://github.com/Tw1ddle/geometrize-top-level-repo/blob/master/list_git_repos_and_submodules.sh) script.
 
 ## Notes
  * Got an idea or suggestion? Open an issue on GitHub, or send Sam a message on [Twitter](https://twitter.com/Sam_Twidale).

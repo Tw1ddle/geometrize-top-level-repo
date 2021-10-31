@@ -10,8 +10,8 @@ echo ""
 echo ""
 echo ""
 
-echo "| Repository Name | Submodule Names |"
-echo "| --------------- | --------------- |"
+echo "| Repository Name                   | Submodules      |"
+echo "| --------------------------------- | --------------- |"
 
 ## The paths to all the .git files in the repo, essentially the root folders + .git for where all the git repos are
 relativePathsToDotGitFiles="$( find . -name .git -type d -prune )"

@@ -12,6 +12,8 @@ Checkout this repository and then download the entire Geometrize codebase by run
 
 The Geometrize project is split across numerous git repositories and submodules - it comprises several separate, modular pieces of software.
 
+Good places to start would be to build and run the C++ [minimal example program](https://github.com/Tw1ddle/geometrize-lib-example), the [Geometrize desktop application](https://github.com/Tw1ddle/geometrize), or the [web demo](https://github.com/Tw1ddle/geometrize-haxe-web).
+
 To contribute, please make a pull request or open an issue on the relevant repository. Write access to repositories may also be granted to trusted contributors.
 
 ## Project Structure

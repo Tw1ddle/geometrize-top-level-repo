@@ -2,7 +2,12 @@
 
 ## Prints a Markdown table of the git repositories and submodules in the folder. This is just a snippet
 ## for creating the table of repositories and descriptions to include in README.md
+
+# Base URL for the site with all the code repositories in it
 repoBaseUrl="https://github.com/Tw1ddle"
+
+# Base URL for the automated build status provider
+buildBadgeBaseUrl="https://ci.appveyor.com/api/projects/status/github/Tw1ddle"
 
 ## List of all the Geometrize project repository names paired with descriptions for each one
 declare -A repoDescriptions 
@@ -35,8 +40,8 @@ echo ""
 echo ""
 echo ""
 
-echo "| Repository Name                   | Submodules      | Description |"
-echo "| --------------------------------- | --------------- | ----------- |"
+echo "| Repository Name                   | Submodules      | Description | Build Status |"
+echo "| --------------------------------- | --------------- | ----------- | ------------ |"
 
 ## The paths to all the .git files in the repo, essentially the root folders + .git for where all the git repos are
 relativePathsToDotGitFiles="$( find . -name .git -type d -prune )"
@@ -51,12 +56,14 @@ do
   
   repoLink="[$repoName]($repoBaseUrl/$repoName)"
   
+  buildBadge="![Build badge]($buildBadgeBaseUrl/$repoName)"
+  
   ## Get the submodule names for the repo
   #git submodule--helper list ## Print out the submodule names for this repository (non-recursive)
   #git submodule status --recursive ## Print out the submodule names for this repository (recursive)
   submoduleNames=$(git submodule | awk '{ print $2 }')
   
-  echo "| "${repoLink}" | "${submoduleNames}" | "${repoDescriptions[$repoName]}" |"
+  echo "| "${repoLink}" | "${submoduleNames}" | "${repoDescriptions[$repoName]}" | ${buildBadge} |"
 
   popd > /dev/null
 done

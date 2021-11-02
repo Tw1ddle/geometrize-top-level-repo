@@ -23,15 +23,16 @@ The project repositories are structured as follows:
 | Repository Name                   | Submodules      | Description |
 | --------------------------------- | --------------- | ----------- |
 | [geometrize-top-level-repo](https://github.com/Tw1ddle/geometrize-top-level-repo) |  | The top level Geometrize C++ repository and developer quickstart guide |
-| [geometrize](https://github.com/Tw1ddle/geometrize) | lib/burstlinker/burstlinker lib/cereal lib/chaiscript lib/dataslinger lib/geometrize resources/scripts resources/templates resources/web_export translations | The main Geometrize C++ application repository |
-| [geometrize-docs](https://github.com/Tw1ddle/geometrize-docs) | geometrize | Code documentation generation and hosting for the Geometrize C++ application |
+| [geometrize](https://github.com/Tw1ddle/geometrize) | lib/burstlinker/burstlinker lib/cereal lib/chaiscript lib/dataslinger lib/geometrize resources/scripts resources/templates resources/web_export translations | The main Geometrize C++ desktop application repository. The submodules include translations, resources, sample images and scripts. |
+| [geometrize-docs](https://github.com/Tw1ddle/geometrize-docs) | geometrize | Developer documentation generation and hosting for the Geometrize C++ application |
 | [geometrize-functional-tests](https://github.com/Tw1ddle/geometrize-functional-tests) |  | Automated tests for the Geometrize C++ application |
 | [geometrize-gallery](https://github.com/Tw1ddle/geometrize-gallery) |  | Code repository and hosting for a collection of example geometrized images |
 | [geometrize-haxe](https://github.com/Tw1ddle/geometrize-haxe) |  | The Geometrize Haxe library repository |
 | [geometrize-haxe-example](https://github.com/Tw1ddle/geometrize-haxe-example) | lib/geometrize | A HaxeFlixel-based demo of the Geometrize Haxe library |
 | [geometrize-haxe-unit-tests](https://github.com/Tw1ddle/geometrize-haxe-unit-tests) | geometrize | Unit tests for the Geometrize Haxe library |
-| [geometrize-haxe-web](https://github.com/Tw1ddle/geometrize-haxe-web) | lib/geometrize | Code repository for the Geometrize Haxe web demo application |
-| [geometrize-lib-docs](https://github.com/Tw1ddle/geometrize-lib-docs) | geometrize | Code documentation generation and hosting for the Geometrize C++ library |
+| [geometrize-haxe-web](https://github.com/Tw1ddle/geometrize-haxe-web) | lib/geometrize | Code repository for the Geometrize Haxe web application |
+| [geometrize-installer](https://github.com/Tw1ddle/geometrize-installer) | geometrize | Installer and packaging code for the Geometrize C++ desktop application |
+| [geometrize-lib-docs](https://github.com/Tw1ddle/geometrize-lib-docs) | geometrize | Developer documentation generation and hosting for the Geometrize C++ library |
 | [geometrize-lib-example](https://github.com/Tw1ddle/geometrize-lib-example) | lib/args lib/geometrize | A minimal C++ usage example of the Geometrize C++ library |
 | [geometrize-lib-fuzzing](https://github.com/Tw1ddle/geometrize-lib-fuzzing) | lib/geometrize | Fuzz tests for the Geometrize C++ library |
 | [geometrize-lib-unit-tests](https://github.com/Tw1ddle/geometrize-lib-unit-tests) | geometrize | Unit tests for the Geometrize C++ library |
@@ -41,11 +42,15 @@ The project repositories are structured as follows:
 | [geometrize-tween-optimizer](https://github.com/Tw1ddle/geometrize-tween-optimizer) |  | A tool for creating visually appealing tweens between sets of geometric primitives |
 | [geometrize-tweens](https://github.com/Tw1ddle/geometrize-tweens) |  | A web-based demo showing tweens between media composed of geometric primitives |
 | [geometrize-twitter-bot](https://github.com/Tw1ddle/geometrize-twitter-bot) |  | A Twitter bot that geometrizes images found on Twitter, and tweets the results |
-| [geometrize-twitter-bot-docs](https://github.com/Tw1ddle/geometrize-twitter-bot-docs) | geometrize-twitter-bot | Code documentation generation and documentation hosting for the Geometrize Twitter bot |
-| [geometrize-website](https://github.com/Tw1ddle/geometrize-website) |  | A website and landing page for the Geometrize project |
+| [geometrize-twitter-bot-docs](https://github.com/Tw1ddle/geometrize-twitter-bot-docs) | geometrize-twitter-bot | Developer documentation generation and documentation hosting for the Geometrize Twitter bot |
+| [geometrize-website](https://github.com/Tw1ddle/geometrize-website) |  | A user-facing website and landing page for the Geometrize project |
 
+The table above was generated via the [list_git_repos_and_submodules.sh](https://github.com/Tw1ddle/geometrize-top-level-repo/blob/master/list_git_repos_and_submodules.sh) script.
 
-The table above is generated via the [list_git_repos_and_submodules.sh](https://github.com/Tw1ddle/geometrize-top-level-repo/blob/master/list_git_repos_and_submodules.sh) script.
+## Automated Builds
+
+When a commit is made to the master branch of a repository, automated builds are triggered to build, test and deploy any artifacts. For example, when a commit is made to the [main Geometrize C++](https://github.com/Tw1ddle/geometrize) repository, a build job will build the latest changes
+for Windows, Mac and Linux. If this succeeds, then a build job for the [Geometrize C++ installer](https://github.com/Tw1ddle/geometrize-installer) is triggered, to build installers for the latest revision of Geometrize. These installers are then deployed to an Amazon S3 bucket.
 
 ## Licenses
 

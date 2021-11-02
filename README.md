@@ -20,8 +20,8 @@ To contribute, make a pull request or open an issue on the relevant repository. 
 
 The project repositories are structured as follows:
 
-| Repository Name                   | Submodules      | Description | <span style="display: inline-block; width:200px">Build Status</span> |
-| --------------------------------- | --------------- | -----------  | ------------------------------------------------------------------- |
+| Repository Name                   | Submodules      | Description | Automated Build Status |
+| --------------------------------- | --------------- | ----------- | ---------------------- |
 | [geometrize-top-level-repo](https://github.com/Tw1ddle/geometrize-top-level-repo) |  | The top level Geometrize C++ repository and developer quickstart guide | [![Build Status Badge](https://ci.appveyor.com/api/projects/status/github/Tw1ddle/geometrize-top-level-repo)](https://ci.appveyor.com/project/Tw1ddle/geometrize-top-level-repo) |
 | [geometrize](https://github.com/Tw1ddle/geometrize) | lib/burstlinker/burstlinker lib/cereal lib/chaiscript lib/dataslinger lib/geometrize resources/scripts resources/templates resources/web_export translations | The main Geometrize C++ desktop application repository. The submodules include translations, resources, sample images and scripts. | [![Build Status Badge](https://ci.appveyor.com/api/projects/status/github/Tw1ddle/geometrize)](https://ci.appveyor.com/project/Tw1ddle/geometrize) |
 | [geometrize-docs](https://github.com/Tw1ddle/geometrize-docs) | geometrize | Developer documentation generation and hosting for the Geometrize C++ application | [![Build Status Badge](https://ci.appveyor.com/api/projects/status/github/Tw1ddle/geometrize-docs)](https://ci.appveyor.com/project/Tw1ddle/geometrize-docs) |

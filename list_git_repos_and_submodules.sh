@@ -43,8 +43,8 @@ echo ""
 echo ""
 echo ""
 
-echo "| Repository Name                   | Submodules      | Description | <span style=\"display: inline-block; width:200px\">Build Status</span> |"
-echo "| --------------------------------- | --------------- | ----------- | ---------------------------------------------------------------------- |"
+echo "| Repository Name                   | Submodules      | Description | Automated Build Status |"
+echo "| --------------------------------- | --------------- | ----------- | ---------------------- |"
 
 ## The paths to all the .git files in the repo, essentially the root folders + .git for where all the git repos are
 relativePathsToDotGitFiles="$( find . -name .git -type d -prune )"

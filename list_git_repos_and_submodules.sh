@@ -43,7 +43,7 @@ echo ""
 echo ""
 echo ""
 
-echo "| Repository Name                   | Submodules      | Description | Build Status |"
+echo "| Repository Name                   | Submodules      | Description | <span style=\"display: inline-block; width:200px\">Build Status</span> |"
 echo "| --------------------------------- | --------------- | ----------- | ------------ |"
 
 ## The paths to all the .git files in the repo, essentially the root folders + .git for where all the git repos are

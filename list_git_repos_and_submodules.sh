@@ -59,7 +59,7 @@ do
   
   repoLink="[$repoName]($repoBaseUrl/$repoName)"
   
-  buildBadge="![[Build Status Badge]($buildBadgeBaseUrl/$repoName)]($buildSystemBaseUrl/$repoName)"
+  buildBadge="[![Build Status Badge]($buildBadgeBaseUrl/$repoName)]($buildSystemBaseUrl/$repoName)"
   
   ## Get the submodule names for the repo
   #git submodule--helper list ## Print out the submodule names for this repository (non-recursive)

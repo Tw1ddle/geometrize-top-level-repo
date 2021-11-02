@@ -9,6 +9,9 @@ repoBaseUrl="https://github.com/Tw1ddle"
 # Base URL for the automated build status provider
 buildBadgeBaseUrl="https://ci.appveyor.com/api/projects/status/github/Tw1ddle"
 
+# Base URL for the automated build project pages
+buildSystemBaseUrl="https://ci.appveyor.com/project/Tw1ddle"
+
 ## List of all the Geometrize project repository names paired with descriptions for each one
 declare -A repoDescriptions 
 repoDescriptions["geometrize-top-level-repo"]="The top level Geometrize C++ repository and developer quickstart guide"
@@ -56,7 +59,7 @@ do
   
   repoLink="[$repoName]($repoBaseUrl/$repoName)"
   
-  buildBadge="![Build badge]($buildBadgeBaseUrl/$repoName)"
+  buildBadge="![[Build Status Badge]($buildBadgeBaseUrl/$repoName)]($buildSystemBaseUrl/$repoName)"
   
   ## Get the submodule names for the repo
   #git submodule--helper list ## Print out the submodule names for this repository (non-recursive)

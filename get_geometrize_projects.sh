@@ -1,9 +1,12 @@
 #!/bin/bash
 
+## Clones all of the Geometrize-related projects to this folder (with the exception of the geometrize-top-level-repo, which is where this script originates from)
+## When a repository is added to the Geometrize project, it is added to the repoList variable below
+
 localCheckoutFolder="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )" ## The base folder to clone the Geometrize projects out to (defaults to the current directory the script is in)
 
 ## Base URL for cloning all projects
-## You may wish to change this to your own account, or use HTTPS instead of SSH etc...
+## You may wish to change this to point to your own account (to fetch your own forks), or use HTTPS instead of SSH, if you do not have SSH access to the repositories.
 urlBase="git@github.com:Tw1ddle/"
 
 ## List of all the Geometrize project repository names

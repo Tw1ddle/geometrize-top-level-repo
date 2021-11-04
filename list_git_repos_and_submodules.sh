@@ -1,7 +1,8 @@
 #!/bin/bash
 
-## Prints a Markdown table of the git repositories and submodules in the folder. This is just a snippet
-## for creating the table of repositories and descriptions to include in README.md
+## Prints a Markdown table of the git repositories and submodules in the folder. This is just a utility script
+## for creating the table of Geometrize-related repositories and descriptions to include in README.md
+## When adding new repos to the Geometrize project, add a description to the repoDescriptions array below
 
 # Base URL for the site with all the code repositories in it
 repoBaseUrl="https://github.com/Tw1ddle"

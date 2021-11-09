@@ -1,0 +1,9 @@
+branches:
+  only:
+    - master
+
+image:
+  - Ubuntu2004
+
+install:
+  echo "Nothing to do at the moment"

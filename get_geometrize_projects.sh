@@ -10,7 +10,7 @@ localCheckoutFolder="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null
 urlBase="git@github.com:Tw1ddle/"
 
 ## List of all the Geometrize project repository names
-declare -a repoList=("geometrize" "geometrize-installer" "geometrize-docs" "geometrize-functional-tests" "geometrize-gallery" "geometrize-haxe"
+declare -a repoList=("geometrize" "geometrize-lib" "geometrize-installer" "geometrize-docs" "geometrize-functional-tests" "geometrize-gallery" "geometrize-haxe"
  "geometrize-haxe-example" "geometrize-haxe-unit-tests" "geometrize-haxe-web" "geometrize-lib-docs" "geometrize-lib-example" "geometrize-lib-fuzzing"
  "geometrize-lib-unit-tests" "geometrize-resources" "geometrize-s3-bucket-downloader" "geometrize-screenshots" "geometrize-tween-optimizer" "geometrize-tweens"
  "geometrize-twitter-bot" "geometrize-twitter-bot-docs" "geometrize-website")
@@ -27,7 +27,7 @@ do
 	continue
   fi
   
-  cloneCommand="git clone --recurse-submodules -j8 ${urlBase}${repoName} ${fullCheckoutPath}"
+  cloneCommand="git clone --recurse-submodules -j8 ${urlBase}${repoName}.git ${fullCheckoutPath}"
   echo "Will run clone command: ${cloneCommand}"
   ${cloneCommand}
 done

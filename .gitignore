@@ -1,2 +1,5 @@
 # Ignore folders starting with the name geometrize, since by default the checkout script pulls all of the geometrize repos into this folder
 geometrize*/
+
+# Ignore folders with build in the name, since they are usually build folders from the child repos
+build*

@@ -20,6 +20,8 @@ To contribute, make a pull request or open an issue on the relevant repository. 
 
 The project repositories are structured as follows:
 
+TABLE-BEGINS
+
 | Repository Name                   | Submodules      | Description | Automated Build Status |
 | --------------------------------- | --------------- | ----------- | ---------------------- |
 | [geometrize-top-level-repo](https://github.com/Tw1ddle/geometrize-top-level-repo) |  | The top level Geometrize C++ repository and developer quickstart guide | [![Build Status Badge](https://ci.appveyor.com/api/projects/status/github/Tw1ddle/geometrize-top-level-repo)](https://ci.appveyor.com/project/Tw1ddle/geometrize-top-level-repo) |
@@ -46,7 +48,9 @@ The project repositories are structured as follows:
 | [geometrize-twitter-bot-docs](https://github.com/Tw1ddle/geometrize-twitter-bot-docs) | geometrize-twitter-bot | Developer documentation generation and documentation hosting for the Geometrize Twitter bot | [![Build Status Badge](https://ci.appveyor.com/api/projects/status/github/Tw1ddle/geometrize-twitter-bot-docs)](https://ci.appveyor.com/project/Tw1ddle/geometrize-twitter-bot-docs) |
 | [geometrize-website](https://github.com/Tw1ddle/geometrize-website) |  | A user-facing website and landing page for the Geometrize project | [![Build Status Badge](https://ci.appveyor.com/api/projects/status/github/Tw1ddle/geometrize-website)](https://ci.appveyor.com/project/Tw1ddle/geometrize-website) |
 
-The table above was generated via the [list_git_repos_and_submodules.sh](https://github.com/Tw1ddle/geometrize-top-level-repo/blob/master/list_git_repos_and_submodules.sh) script.
+TABLE-ENDS
+
+The table above was generated via the [tabulate_git_repos_in_readme.sh](https://github.com/Tw1ddle/geometrize-top-level-repo/blob/master/tabulate_git_repos_in_readme.sh) script.
 
 ## Automated Builds
 

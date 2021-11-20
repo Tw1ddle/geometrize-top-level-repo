@@ -11,7 +11,7 @@ urlBase="git@github.com:Tw1ddle/"
 
 ## List of all the Geometrize project repository names
 declare -a repoList=("geometrize" "geometrize-lib" "geometrize-installer" "geometrize-docs" "geometrize-functional-tests" "geometrize-gallery" "geometrize-haxe"
- "geometrize-haxe-example" "geometrize-haxe-unit-tests" "geometrize-haxe-web" "geometrize-lib-docs" "geometrize-lib-example" "geometrize-lib-fuzzing"
+ "geometrize-haxe-demo" "geometrize-haxe-example" "geometrize-haxe-unit-tests" "geometrize-haxe-web" "geometrize-lib-docs" "geometrize-lib-example" "geometrize-lib-fuzzing"
  "geometrize-lib-unit-tests" "geometrize-resources" "geometrize-s3-bucket-downloader" "geometrize-screenshots" "geometrize-tween-optimizer" "geometrize-tweens"
  "geometrize-twitter-bot" "geometrize-twitter-bot-docs" "geometrize-website")
 

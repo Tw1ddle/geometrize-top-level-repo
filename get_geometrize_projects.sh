@@ -10,10 +10,13 @@ localCheckoutFolder="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null
 urlBase="git@github.com:Tw1ddle/"
 
 ## List of all the Geometrize project repository names
-declare -a repoList=("geometrize" "geometrize-lib" "geometrize-installer" "geometrize-docs" "geometrize-functional-tests" "geometrize-gallery" "geometrize-haxe"
- "geometrize-haxe-demo" "geometrize-haxe-example" "geometrize-haxe-unit-tests" "geometrize-haxe-web" "geometrize-lib-docs" "geometrize-lib-example" "geometrize-lib-fuzzing"
- "geometrize-lib-unit-tests" "geometrize-resources" "geometrize-s3-bucket-downloader" "geometrize-screenshots" "geometrize-tween-optimizer" "geometrize-tweens"
- "geometrize-twitter-bot" "geometrize-twitter-bot-docs" "geometrize-website")
+declare -a repoList=(
+ "geometrize" "geometrize-lib" "geometrize-installer" "geometrize-docs" "geometrize-scripts" "geometrize-translations" "geometrize-templates"  "geometrize-web-export" "geometrize-functional-tests" "geometrize-screenshots" # The main C++ library, Qt application and deps
+ "geometrize-lib-example" "geometrize-lib-fuzzing" "geometrize-lib-unit-tests" "geometrize-lib-docs" # More examples, docs and tests for the main C++ library
+ "geometrize-haxe" "geometrize-haxe-demo" "geometrize-haxe-example" "geometrize-haxe-unit-tests" # The Haxe library, web demo and deps
+ "geometrize-twitter-bot" "geometrize-twitter-bot-docs" # The Geometrize Twitter bot
+ "geometrize-website" "geometrize-gallery"  "geometrize-haxe-web"  "geometrize-resources" "geometrize-s3-bucket-downloader" "geometrize-tween-optimizer" "geometrize-tweens" # User-facing websites and landing pages
+ )
 
 ## Loop over the repositories and clone each one, initializing any submodules
 repoListLength=${#repoList[@]}

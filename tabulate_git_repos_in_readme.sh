@@ -16,8 +16,9 @@ buildSystemBaseUrl="https://ci.appveyor.com/project/Tw1ddle"
 
 ## List of all the Geometrize project repository names paired with descriptions for each one
 declare -A repoDescriptions 
+
 repoDescriptions["geometrize-top-level-repo"]="The top level Geometrize C++ repository and developer quickstart guide"
-repoDescriptions["geometrize"]="The main Geometrize C++ desktop application repository. The submodules include translations, resources, sample images and scripts."
+repoDescriptions["geometrize"]="The main Geometrize C++ desktop application repository. The submodules include translations, resources, sample images and scripts"
 repoDescriptions["geometrize-installer"]="Installer and packaging code for the Geometrize C++ desktop application"
 repoDescriptions["geometrize-docs"]="Developer documentation generation and hosting for the Geometrize C++ application"
 repoDescriptions["geometrize-functional-tests"]="Automated tests for the Geometrize C++ application"
@@ -33,13 +34,17 @@ repoDescriptions["geometrize-lib-example"]="A minimal C++ usage example of the G
 repoDescriptions["geometrize-lib-fuzzing"]="Fuzz tests for the Geometrize C++ library"
 repoDescriptions["geometrize-lib-unit-tests"]="Unit tests for the Geometrize C++ library"
 repoDescriptions["geometrize-resources"]="A collection of curated resources e.g. public domain images, for use with Geometrize"
+repoDescriptions["geometrize-scripts"]="A collection of scripts, mostly used for customizing the Geometrize C++ shape generation algorithms"
 repoDescriptions["geometrize-s3-bucket-downloader"]="A frontend for downloading Geometrize installers (from an Amazon S3 bucket)"
 repoDescriptions["geometrize-screenshots"]="Hosting for a set of screenshots showing different parts of the Geometrize C++ application"
+repoDescriptions["geometrize-templates"]="Template images and project settings for the Geometrize C++ application"
+repoDescriptions["geometrize-translations"]="Translations for the Geometrize C++ application user interface"
 repoDescriptions["geometrize-tween-optimizer"]="A tool for creating visually appealing tweens between sets of geometric primitives"
 repoDescriptions["geometrize-tweens"]="A web-based demo showing tweens between media composed of geometric primitives"
 repoDescriptions["geometrize-twitter-bot"]="A Twitter bot that geometrizes images found on Twitter, and tweets the results"
 repoDescriptions["geometrize-twitter-bot-docs"]="Developer documentation generation and documentation hosting for the Geometrize Twitter bot"
 repoDescriptions["geometrize-website"]="A user-facing website and landing page for the Geometrize project"
+repoDescriptions["geometrize-web-export"]="Code for rendering exported shape data in different web formats"
 
 echo ""
 echo "Creating table of the git repositories in and under the current working directory"

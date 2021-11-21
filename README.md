@@ -1,6 +1,7 @@
 [![Geometrize Top Level Repo Logo](https://github.com/Tw1ddle/geometrize-top-level-repo/blob/master/screenshots/logo.png?raw=true "Geometrize top level repo logo")](https://www.geometrize.co.uk/)
 
 [![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg?style=flat-square)](https://github.com/Tw1ddle/geometrize-top-level-repo/blob/master/LICENSE)
+[![Build Status Badge](https://ci.appveyor.com/api/projects/status/github/Tw1ddle/geometrize-top-level-repo)](https://ci.appveyor.com/project/Tw1ddle/geometrize-top-level-repo)
 
 Top level repository for the [Geometrize](https://www.geometrize.co.uk/) project, an app for geometrizing images into geometric primitives and associated tools.
 

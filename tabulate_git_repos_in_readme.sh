@@ -54,7 +54,6 @@ newLine=$'\n'
 tableText+="| Repository Name                   | Description | Automated Build Status |"
 tableText+=${newLine}
 tableText+="| --------------------------------- | ----------- | ---------------------- |"
-tableText+=${newLine}
 
 printf "%s" "${tableText}"
 

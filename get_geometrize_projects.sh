@@ -27,7 +27,7 @@ do
   
   if [ -d "$fullCheckoutPath" ]; then
     echo "Will skip cloning out ${repoName} because a folder with that name already exists"
-	continue
+    continue
   fi
   
   cloneCommand="git clone --recurse-submodules -j8 ${urlBase}${repoName}.git ${fullCheckoutPath}"

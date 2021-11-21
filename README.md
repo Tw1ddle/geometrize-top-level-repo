@@ -66,6 +66,8 @@ The build trigger and deployment graph for the project is shown below:
 
 ![geometrize-build-trigger-graph](https://github.com/Tw1ddle/geometrize-top-level-repo/blob/master/trigger_graph.png?raw=true)
 
+The graph above was generated via the [generate_trigger_graph.sh](https://github.com/Tw1ddle/geometrize-top-level-repo/blob/master/generate_trigger_graph.sh) script.
+
 ## Licenses
 
 Most of the Geometrize project is free software, with code usually falling under the copyleft GPL license or the open source MIT license. Check the individual repositories and submodules and their associated LICENSE files for more details.

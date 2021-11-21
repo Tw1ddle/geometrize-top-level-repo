@@ -1,7 +1,8 @@
 #!/bin/bash
 
-## Prints a Markdown table of the git repositories and submodules in the folder. This is just a utility script
-## for creating the table of Geometrize-related repositories and descriptions to include in README.md
+## This is just a utility script for creating the table of Geometrize-related repositories
+## It prints a Markdown table of the git repositories in the folder and writes
+## this to the project structure section of the repository README file.
 ## When adding new repos to the Geometrize project, add a description to the repoDescriptions array below
 
 # Base URL for the site with all the code repositories in it
@@ -41,13 +42,21 @@ repoDescriptions["geometrize-twitter-bot-docs"]="Developer documentation generat
 repoDescriptions["geometrize-website"]="A user-facing website and landing page for the Geometrize project"
 
 echo ""
-echo "Printing listing of the git repositories and submodules in and under the current working directory"
+echo "Creating table of the git repositories in and under the current working directory"
 echo ""
 echo ""
 echo ""
 
-echo "| Repository Name                   | Submodules      | Description | Automated Build Status |"
-echo "| --------------------------------- | --------------- | ----------- | ---------------------- |"
+# Start building the table text
+tableText=""
+newLine=$'\n'
+
+tableText+="| Repository Name                   | Description | Automated Build Status |"
+tableText+=${newLine}
+tableText+="| --------------------------------- | ----------- | ---------------------- |"
+tableText+=${newLine}
+
+printf "%s" "${tableText}"
 
 ## The paths to all the .git files in the repo, essentially the root folders + .git for where all the git repos are
 relativePathsToDotGitFiles="$( find . -name .git -type d -prune )"
@@ -65,13 +74,34 @@ do
   buildBadge="[![Build Status Badge]($buildBadgeBaseUrl/$repoName)]($buildSystemBaseUrl/$repoName)"
   
   ## Get the submodule names for the repo
+  ## Not including this at the moment, it's too slow, and the submodules are described in the main table anyway
   #git submodule--helper list ## Print out the submodule names for this repository (non-recursive)
   #git submodule status --recursive ## Print out the submodule names for this repository (recursive)
-  submoduleNames=$(git submodule | awk '{ print $2 }')
+  #submoduleNames="$(git submodule | awk '{ print $2 }')"
   
-  echo "| "${repoLink}" | "${submoduleNames}" | "${repoDescriptions[$repoName]}" | ${buildBadge} |"
+  tableRow="| "${repoLink}" | "${repoDescriptions[$repoName]}" | "${buildBadge}" |"
+  echo ${tableRow}
+  
+  tableText+=${newLine}
+  tableText+="${tableRow}"
 
   popd > /dev/null
 done
 
+outText="TABLE-BEGINS"
+outText+=${newLine}${newLine}
+outText+="${tableText}"
+outText+=${newLine}${newLine}
+outText+="TABLE-ENDS"
+
+# Replaces the table in the README.md file contents with the new one built above 
+replacedReadmeText="$( awk -v RS='TABLE-BEGINS.*TABLE-ENDS' -v ORS= '1;NR==1{printf "REMOVED_TABLE"}' README.md )"
+
+replacedReadmeText="${replacedReadmeText/REMOVED_TABLE/$outText}"
+
 echo ""
+echo ""
+echo "Overwriting README.md with the following new updated text/table"
+echo ""
+echo ""
+echo "${replacedReadmeText}" | tee 'README.md'

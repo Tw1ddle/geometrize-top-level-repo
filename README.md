@@ -64,7 +64,7 @@ for Windows, Mac and Linux. If this succeeds, then a build job for the [Geometri
 
 The build trigger and deployment graph for the project is shown below:
 
-![geometrize-build-trigger-graph](https://github.com/Tw1ddle/geometrize-top-level-repo/blob/master/trigger-graph.png?raw=true)
+![geometrize-build-trigger-graph](https://github.com/Tw1ddle/geometrize-top-level-repo/blob/master/trigger_graph.png?raw=true)
 
 ## Licenses
 

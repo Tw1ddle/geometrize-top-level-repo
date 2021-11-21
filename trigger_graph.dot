@@ -1,0 +1,64 @@
+digraph G {
+  rankdir=LR;
+  graph [pad="0.1", nodesep="0.15", ranksep="0.2", fontsize=32 fontname = "helvetica"];
+  node [fontsize="20pt" fontname = "helvetica"];
+  edge [fontsize="20pt", label="triggers" fontname = "helvetica"];
+
+  subgraph cluster_0 {
+    label = "Geometrize C++ Desktop App";
+    geometrize_installer
+
+    geometrize_scripts -> geometrize
+    geometrize_templates -> geometrize
+    geometrize_translations -> geometrize
+    geometrize_web_export -> geometrize
+
+    geometrize -> geometrize_docs
+    geometrize -> geometrize_functional_tests
+    geometrize -> geometrize_installer
+  }
+
+  subgraph cluster_1 {
+    label = "Geometrize C++ Library";
+    geometrize_lib -> geometrize_lib_docs
+    geometrize_lib -> geometrize_lib_example
+    geometrize_lib -> geometrize_lib_unit_tests
+    geometrize_lib -> geometrize_lib_fuzzing
+  }
+
+  subgraph cluster_2 {
+      label = "Twitter Bot";
+      geometrize_twitter_bot -> geometrize_twitter_bot_docs
+  }
+
+  subgraph cluster_3 {
+    label = "Websites";
+    geometrize_website
+    geometrize_gallery
+    geometrize_resources
+    geometrize_screenshots
+    geometrize_s3_bucket_downloader
+    geometrize_haxe_web
+    geometrize_tweens
+    geometrize_tween_optimizer
+  }
+
+  subgraph cluster_4 {
+    label = "Geometrize Haxe";
+    geometrize_haxe -> geometrize_haxe_unit_tests
+    geometrize_haxe -> geometrize_haxe_example
+    geometrize_haxe -> geometrize_haxe_demo
+    geometrize_haxe -> geometrize_haxe_docs
+  }
+
+  subgraph cluster_5 {
+    label = "Geometrize Top Level Repo";
+    geometrize_top_level_repo;
+  }
+
+  geometrize_lib -> geometrize [label="triggers"]
+  geometrize_haxe -> geometrize_haxe_web [label="triggers"] [constraint=false] 
+
+  geometrize_installer -> geometrize_s3_bucket_downloader [label="deploys to"] [constraint=false]
+  geometrize_lib_example -> geometrize_s3_bucket_downloader [label="deploys to"] [constraint=false]
+}

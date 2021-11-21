@@ -62,6 +62,10 @@ The table above was generated via the [tabulate_git_repos_in_readme.sh](https://
 When a commit is made to the master branch of a repository, automated builds are triggered to build, test and deploy any artifacts. For example, when a commit is made to the [main Geometrize C++](https://github.com/Tw1ddle/geometrize) repository, a build job will build the latest changes
 for Windows, Mac and Linux. If this succeeds, then a build job for the [Geometrize C++ installer](https://github.com/Tw1ddle/geometrize-installer) is triggered, to build installers for the latest revision of Geometrize. These installers are then deployed to an [Amazon S3 bucket](https://github.com/Tw1ddle/geometrize-s3-bucket-downloader).
 
+The build trigger and deployment graph for the project is shown below:
+
+![geometrize-build-trigger-graph](https://github.com/Tw1ddle/geometrize-top-level-repo/blob/master/trigger-graph.png?raw=true)
+
 ## Licenses
 
 Most of the Geometrize project is free software, with code usually falling under the copyleft GPL license or the open source MIT license. Check the individual repositories and submodules and their associated LICENSE files for more details.

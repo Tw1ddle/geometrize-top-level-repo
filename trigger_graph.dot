@@ -1,3 +1,5 @@
+// Graph that describes which builds trigger other builds and deployments within the Geometrize project
+
 digraph G {
   rankdir=LR;
   graph [pad="0.1", nodesep="0.15", ranksep="0.2", fontsize=32 fontname = "helvetica"];
@@ -48,7 +50,7 @@ digraph G {
     geometrize_haxe -> geometrize_haxe_unit_tests
     geometrize_haxe -> geometrize_haxe_example
     geometrize_haxe -> geometrize_haxe_demo
-    geometrize_haxe -> geometrize_haxe_docs
+    #geometrize_haxe -> geometrize_haxe_docs // Documentation generation is done in the main geometrize_haxe build
   }
 
   subgraph cluster_5 {

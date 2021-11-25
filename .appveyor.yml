@@ -1,6 +1,6 @@
 branches:
   only:
-    - master
+    - never-build-automatically-dont-use-this-branchname
 
 image:
   - Ubuntu2004

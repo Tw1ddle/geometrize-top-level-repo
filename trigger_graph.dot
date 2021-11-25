@@ -1,4 +1,5 @@
 // Graph that describes which builds trigger other builds and deployments within the Geometrize project
+// Builds and deployments generally trigger after build success, not build failures/cancellation
 
 digraph G {
   rankdir=LR;
@@ -16,8 +17,9 @@ digraph G {
     geometrize_web_export -> geometrize
 
     geometrize -> geometrize_docs
-    geometrize -> geometrize_functional_tests
     geometrize -> geometrize_installer
+    
+    geometrize_installer -> geometrize_functional_tests
   }
 
   subgraph cluster_1 {

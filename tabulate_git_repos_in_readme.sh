@@ -35,7 +35,6 @@ repoDescriptions["geometrize-lib-fuzzing"]="Fuzz tests for the Geometrize C++ li
 repoDescriptions["geometrize-lib-unit-tests"]="Unit tests for the Geometrize C++ library"
 repoDescriptions["geometrize-resources"]="A collection of curated resources e.g. public domain images, for use with Geometrize"
 repoDescriptions["geometrize-scripts"]="A collection of scripts, mostly used for customizing the Geometrize C++ shape generation algorithms"
-repoDescriptions["geometrize-s3-bucket-downloader"]="A frontend for downloading Geometrize installers (from an Amazon S3 bucket)"
 repoDescriptions["geometrize-screenshots"]="Hosting for a set of screenshots showing different parts of the Geometrize C++ application"
 repoDescriptions["geometrize-templates"]="Template images and project settings for the Geometrize C++ application"
 repoDescriptions["geometrize-translations"]="Translations for the Geometrize C++ application user interface"

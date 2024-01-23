@@ -61,7 +61,7 @@ The table above was generated via the [tabulate_git_repos_in_readme.sh](https://
 ## Automated Builds
 
 When a commit is made to the master branch of a repository, automated builds are triggered to build, test and deploy any artifacts. For example, when a commit is made to the [main Geometrize C++](https://github.com/Tw1ddle/geometrize) repository, a build job will build the latest changes
-for Windows, Mac and Linux. If this succeeds, then a build job for the [Geometrize C++ installer](https://github.com/Tw1ddle/geometrize-installer) is triggered, to build installers for the latest revision of Geometrize. These installers are then deployed to an [Amazon S3 bucket](https://github.com/Tw1ddle/geometrize-s3-bucket-downloader).
+for Windows, Mac and Linux. If this succeeds, then a build job for the [Geometrize C++ installer](https://github.com/Tw1ddle/geometrize-installer) is triggered, to build installers for the latest revision of Geometrize.
 
 The build trigger and deployment graph for the project is shown below:
 

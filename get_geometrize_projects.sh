@@ -15,7 +15,7 @@ declare -a repoList=(
  "geometrize-lib-example" "geometrize-lib-fuzzing" "geometrize-lib-unit-tests" "geometrize-lib-docs" # More examples, docs and tests for the main C++ library
  "geometrize-haxe" "geometrize-haxe-demo" "geometrize-haxe-example" "geometrize-haxe-unit-tests" # The Haxe library, web demo and deps
  "geometrize-twitter-bot" "geometrize-twitter-bot-docs" # The Geometrize Twitter bot
- "geometrize-website" "geometrize-gallery"  "geometrize-haxe-web"  "geometrize-resources" "geometrize-s3-bucket-downloader" "geometrize-tween-optimizer" "geometrize-tweens" # User-facing websites and landing pages
+ "geometrize-website" "geometrize-gallery"  "geometrize-haxe-web"  "geometrize-resources" "geometrize-tween-optimizer" "geometrize-tweens" # User-facing websites and landing pages
  )
 
 ## Loop over the repositories and clone each one, initializing any submodules
